@@ -1,0 +1,18 @@
+<div class="categories navbar navbar-default" >
+    <ul class="nav navbar-nav">
+        <li ng-repeat="category in categories" class="categories" ng-drop="true" ng-drop-success="onDropSuccess($index, $data, $event)">
+            <a ui-sref=".items({categoryId: category.id})">{{category.name}}</a>
+        </li>
+        <li class="deleteItem" ng-drop="true" ng-drop-success="onDeleteLiDrop($data)">
+            <div class="deleteItem">
+                <span class="glyphicon glyphicon-trash"></span>
+                Delete item
+            </div>
+        </li>
+        <li>
+            <a ui-sref="login" class="logout" ng-click="logout()">
+                <span class="glyphicon glyphicon-log-out"></span>LogOut
+            </a>
+        </li>
+    </ul>
+</div>

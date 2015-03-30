@@ -1,0 +1,7 @@
+.bowerrc
+.project
+config.json
+node_modules/
+app/bower_components/
+
+

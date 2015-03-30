@@ -1,0 +1,11 @@
+{
+    "name":"test-db",
+    "version": "0.0.1",
+    "dependencies": {
+        "ejs": "latest",
+        "express": "4.x",
+        "body-parser": "latest",
+        "mysql": "latest",
+        "express-session": "latest"
+    }
+}

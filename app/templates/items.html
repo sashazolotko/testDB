@@ -1,0 +1,11 @@
+<div class="items">
+    <ul class="list-group">
+        <li ng-repeat="item in items" class="list-group-item items"
+         ng-drag="true" ng-drag-data="{{item}}" ng-drag-success="onDragSuccess($index, $data, $event)">
+            <a ui-sref=".details({itemId: item.id})" class="list-group-item" ng-click="onClick($event)">{{item.name}}</a>
+        </li>
+    </ul>
+    <button class="btn btn-default ">
+        <span class="glyphicon glyphicon-plus"></span><a ui-sref=".add">Add new</a>
+    </button>
+</div>

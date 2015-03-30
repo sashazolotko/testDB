@@ -1,0 +1,39 @@
+<div class="register">
+    <form class="form-horizontal" name="registerForm">
+        <div class="form-group">
+            <label for="login" class="col-sm-2 control-label">Login</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" name="login" required ng-model="user.login"/>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="password" class="col-sm-2 control-label">Password</label>
+            <div class="col-sm-10">
+                <input type="password" class="form-control" 
+                name="password" required  ng-minlength="8" ng-maxlength="30" ng-model="user.password"/>
+                <span class="invalidField" ng-show="registerForm.password.$dirty && registerForm.password.$error.minlength">Too short password.</span>
+                <span class="invalidField" ng-show="registerForm.password.$dirty && registerForm.password.$error.maxlength">Too long password.</span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="repPass" class="col-sm-2 control-label">Confirm password</label>
+            <div class="col-sm-10">
+                <input type="password" class="form-control" name="repPass"
+                  ng-model="repeatPas"/>
+                 <span class="invalidField" ng-show="registerForm.repPass.$dirty && repeatPas!=user.password">Passwords aren't match!</span>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+                <button type="submit" class="btn btn-success">
+                    <span>{{user.id}}</span>
+                    <a ui-sref="categories" ng-click="submit()">Submit</a>
+                </button>
+                <button class="btn btn-default">
+                    <span class="glyphicon glyphicon-log-in"></span>
+                    <a ui-sref="login" class="transition">Login</a>
+                </button>
+            </div>
+        </div>
+    </form>
+</div>

@@ -1,0 +1,33 @@
+<div class="modal add" id="addModal">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4>Add new item</h4>
+            </div>
+            <div class="modal-body">
+                <form class="form-horizontal">
+                    
+                    <div class="form-group">
+                        <label class="col-sm-1 control-label" for="title">Name</label>
+                        <div class="col-sm-11">
+                            <input class="form-control" id="title" ng-model="item.name" placeholder="Enter name"/>
+                        </div>
+                    </div>
+                    <editor></editor>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <div class="form-group">
+                    <div class="col-sm-offset-4">
+                        <button class="btn btn-default" ng-click="close()">
+                            <a ui-sref="categories.items">Close</a>
+                        </button>
+                        <button class="btn btn-default" ng-click="submit()">
+                            <a ui-sref="categories.items" ui-sref-opts="{reload:true}">Submit</a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

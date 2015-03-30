@@ -1,0 +1,109 @@
+.main {
+    width: 70%;
+    padding: 0;
+    margin: 0 auto;
+    height: 300px;
+    position: absolute;
+}
+div.categories {
+    top: 20px;
+    left: 20px;
+    padding: 0;
+    width: 60%;
+}
+ul {
+    margin: 0;
+    padding: 0;
+}
+li.categories {
+    border-right: 2px solid green;
+}
+li.categories a {
+    font-size: 18px;
+}
+li a.logout {
+    padding-left: 7px;
+    padding-right: 5px;
+    font-size: 12px;
+    width: 70px;
+}
+div.items {
+    padding-top: 5px;
+    padding-left: 20px;
+    width: 60%;
+}
+li.items {
+    list-style-type: none;
+}
+li.items:hover {
+    cursor: move;
+}
+div.details {
+    border: 1px solid;
+    position: absolute;
+    right: -30px;
+    top: 20px;
+    width: 40%;
+}
+div.details div {
+    border-top: 2px solid green;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    overflow-x: hidden;
+}
+div.register, div.login {
+    background: #ffffff;
+    width: 60%;
+    margin-top: 20px;
+}
+.invalidField {
+    color: red;
+}
+#panel {
+    margin: 5px;
+    padding: 10px 10px;
+    background: #ccc;
+    border: 2px solid #ddd
+}
+#panel .panel-heading label {
+    padding: 0;
+}
+#panel textarea {
+    height: 150px;
+}
+#colorInput {
+    width: 75px;
+}
+.navbar {
+    padding-top: 10px;
+}
+.navbar-form .form-control {
+    margin-right: 20px;
+}
+a, a:hover, a:link, a:visited {
+    text-decoration: none;
+    color: #535353;
+}
+li.drag-enter {
+    box-shadow: -1px 1px 20px 10px #6dffb7 inset;
+}
+li.drag-over {
+    opacity: 0.9;
+}
+li.deleteItem {
+    left: 5px;
+    width: 140px;
+    height: 50px;
+}
+li.deleteItem div.deleteItem {
+    position: relative;
+    left: 10px;
+    top: 20px;
+    color: #ccc;
+}
+li.deleteItem.drag-enter {
+    box-shadow: -1px 1px 20px 10px #e45454 inset;
+}
+li.deleteItem.drag-enter div.deleteItem {
+    color: #535353;    
+}
